@@ -1,0 +1,8 @@
+-- LeetCode 178: Rank_Scores
+-- Difficulty: Medium
+
+SELECT 
+    score,
+    DENSE_RANK() OVER (ORDER BY score DESC) AS 'rank'
+FROM 
+    Scores;
